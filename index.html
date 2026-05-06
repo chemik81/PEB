@@ -796,8 +796,236 @@ let record = {
     { id: 'budapest-bulls',   name: 'Budapest Bulls',   division: 'div3', logo: '' },
     { id: 'bratislava-blaze', name: 'Bratislava Blaze', division: 'div3', logo: '' }
   ],
-  matches: [],
-  events: []
+  matches: [
+    // ── DIV 1 ──
+    { id:'d1-g1', team1:'warsaw-wolves', team2:'krakow-kings', date:'2025-03-08', status:'final', score1:98, score2:84, mvp:'Marek Kowalski',
+      team1_players:[
+        {name:'Marek Kowalski',  pos:'PG', pts:28, reb:5,  ast:9,  stl:3, blk:0, tov:2, fgm:10, fga:18, tpm:3, tpa:7, ftm:5,  fta:6,  grade:'A'},
+        {name:'Piotr Zając',     pos:'SG', pts:18, reb:4,  ast:3,  stl:1, blk:0, tov:1, fgm:7,  fga:14, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'B+'},
+        {name:'Adam Nowak',      pos:'SF', pts:14, reb:6,  ast:2,  stl:2, blk:1, tov:2, fgm:5,  fga:10, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B'},
+        {name:'Tomasz Wiśniewski',pos:'PF',pts:22, reb:10, ast:1,  stl:1, blk:3, tov:1, fgm:9,  fga:14, tpm:0, tpa:1, ftm:4,  fta:5,  grade:'A-'},
+        {name:'Kamil Dąbrowski', pos:'C',  pts:16, reb:12, ast:2,  stl:0, blk:4, tov:2, fgm:7,  fga:11, tpm:0, tpa:0, ftm:2,  fta:4,  grade:'B+'}
+      ],
+      team2_players:[
+        {name:'Rafał Lewandowski',pos:'PG',pts:21, reb:4,  ast:7,  stl:2, blk:0, tov:3, fgm:8,  fga:17, tpm:2, tpa:6, ftm:3,  fta:4,  grade:'B+'},
+        {name:'Szymon Woźniak',   pos:'SG',pts:17, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:13, tpm:3, tpa:7, ftm:2,  fta:2,  grade:'B'},
+        {name:'Michał Krawczyk',  pos:'SF',pts:14, reb:5,  ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:11, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Łukasz Mazur',     pos:'PF',pts:19, reb:8,  ast:2,  stl:1, blk:1, tov:2, fgm:7,  fga:12, tpm:0, tpa:0, ftm:5,  fta:6,  grade:'B'},
+        {name:'Grzegorz Piotrowski',pos:'C',pts:13,reb:9,  ast:1,  stl:0, blk:2, tov:1, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ]
+    },
+    { id:'d1-g2', team1:'lodz-lions', team2:'gdansk-gulls', date:'2025-03-10', status:'final', score1:77, score2:91, mvp:'Bartosz Kalinowski',
+      team1_players:[
+        {name:'Jakub Wiśniewska', pos:'PG', pts:16, reb:3,  ast:6,  stl:1, blk:0, tov:3, fgm:6,  fga:14, tpm:1, tpa:4, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Damian Szymański',  pos:'SG', pts:12, reb:2,  ast:2,  stl:2, blk:0, tov:2, fgm:4,  fga:11, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'C+'},
+        {name:'Filip Kubiak',      pos:'SF', pts:18, reb:7,  ast:1,  stl:1, blk:0, tov:1, fgm:7,  fga:13, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'B'},
+        {name:'Robert Pawlak',     pos:'PF', pts:14, reb:9,  ast:2,  stl:0, blk:2, tov:2, fgm:5,  fga:10, tpm:0, tpa:0, ftm:4,  fta:6,  grade:'B-'},
+        {name:'Marcin Grabowski',  pos:'C',  pts:17, reb:11, ast:1,  stl:0, blk:3, tov:1, fgm:7,  fga:10, tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B'}
+      ],
+      team2_players:[
+        {name:'Bartosz Kalinowski',pos:'PG', pts:26, reb:5,  ast:10, stl:3, blk:0, tov:2, fgm:9,  fga:16, tpm:4, tpa:8, ftm:4,  fta:5,  grade:'A'},
+        {name:'Krzysztof Rutkowski',pos:'SG',pts:22, reb:4,  ast:3,  stl:2, blk:0, tov:1, fgm:8,  fga:15, tpm:3, tpa:6, ftm:3,  fta:3,  grade:'B+'},
+        {name:'Paweł Sikora',      pos:'SF', pts:16, reb:6,  ast:2,  stl:1, blk:1, tov:1, fgm:6,  fga:11, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B'},
+        {name:'Artur Wróblewski',  pos:'PF', pts:15, reb:8,  ast:1,  stl:0, blk:2, tov:2, fgm:6,  fga:10, tpm:0, tpa:1, ftm:3,  fta:4,  grade:'B'},
+        {name:'Sebastian Jankowski',pos:'C', pts:12, reb:10, ast:2,  stl:1, blk:3, tov:2, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:2,  fta:4,  grade:'B-'}
+      ]
+    },
+    { id:'d1-g3', team1:'warsaw-wolves', team2:'gdansk-gulls', date:'2025-03-22', status:'final', score1:105, score2:99, mvp:'Marek Kowalski',
+      team1_players:[
+        {name:'Marek Kowalski',   pos:'PG', pts:32, reb:6,  ast:11, stl:2, blk:0, tov:3, fgm:11, fga:19, tpm:4, tpa:9, ftm:6,  fta:7,  grade:'A'},
+        {name:'Piotr Zając',      pos:'SG', pts:21, reb:3,  ast:4,  stl:1, blk:0, tov:1, fgm:8,  fga:14, tpm:2, tpa:5, ftm:3,  fta:3,  grade:'B+'},
+        {name:'Adam Nowak',       pos:'SF', pts:19, reb:7,  ast:3,  stl:2, blk:1, tov:2, fgm:7,  fga:12, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B+'},
+        {name:'Tomasz Wiśniewski',pos:'PF', pts:18, reb:9,  ast:2,  stl:1, blk:2, tov:1, fgm:7,  fga:11, tpm:0, tpa:1, ftm:4,  fta:5,  grade:'B'},
+        {name:'Kamil Dąbrowski',  pos:'C',  pts:15, reb:11, ast:1,  stl:0, blk:5, tov:2, fgm:6,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B+'}
+      ],
+      team2_players:[
+        {name:'Bartosz Kalinowski',pos:'PG', pts:29, reb:4,  ast:9,  stl:3, blk:0, tov:2, fgm:10, fga:18, tpm:4, tpa:8, ftm:5,  fta:6,  grade:'A-'},
+        {name:'Krzysztof Rutkowski',pos:'SG',pts:24, reb:3,  ast:2,  stl:1, blk:0, tov:2, fgm:9,  fga:16, tpm:3, tpa:7, ftm:3,  fta:4,  grade:'B+'},
+        {name:'Paweł Sikora',      pos:'SF', pts:18, reb:6,  ast:2,  stl:0, blk:1, tov:1, fgm:7,  fga:12, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B'},
+        {name:'Artur Wróblewski',  pos:'PF', pts:16, reb:7,  ast:1,  stl:1, blk:1, tov:2, fgm:6,  fga:10, tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B'},
+        {name:'Sebastian Jankowski',pos:'C', pts:12, reb:10, ast:1,  stl:0, blk:2, tov:1, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'B-'}
+      ]
+    },
+    { id:'d1-g4', team1:'krakow-kings', team2:'lodz-lions', date:'2025-04-05', status:'final', score1:88, score2:82, mvp:'Rafał Lewandowski',
+      team1_players:[
+        {name:'Rafał Lewandowski', pos:'PG', pts:24, reb:5,  ast:8,  stl:3, blk:0, tov:2, fgm:9,  fga:16, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'A-'},
+        {name:'Szymon Woźniak',    pos:'SG', pts:19, reb:3,  ast:2,  stl:2, blk:0, tov:1, fgm:7,  fga:13, tpm:3, tpa:7, ftm:2,  fta:2,  grade:'B+'},
+        {name:'Michał Krawczyk',   pos:'SF', pts:16, reb:6,  ast:1,  stl:1, blk:1, tov:1, fgm:6,  fga:11, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B'},
+        {name:'Łukasz Mazur',      pos:'PF', pts:18, reb:9,  ast:2,  stl:0, blk:2, tov:2, fgm:7,  fga:11, tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B'},
+        {name:'Grzegorz Piotrowski',pos:'C', pts:11, reb:10, ast:1,  stl:0, blk:3, tov:1, fgm:4,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ],
+      team2_players:[
+        {name:'Jakub Wiśniewska',  pos:'PG', pts:20, reb:4,  ast:7,  stl:2, blk:0, tov:3, fgm:7,  fga:15, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'B'},
+        {name:'Damian Szymański',  pos:'SG', pts:15, reb:2,  ast:2,  stl:1, blk:0, tov:1, fgm:5,  fga:12, tpm:2, tpa:5, ftm:3,  fta:3,  grade:'C+'},
+        {name:'Filip Kubiak',      pos:'SF', pts:17, reb:7,  ast:2,  stl:1, blk:0, tov:2, fgm:6,  fga:12, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B'},
+        {name:'Robert Pawlak',     pos:'PF', pts:18, reb:10, ast:1,  stl:0, blk:2, tov:1, fgm:7,  fga:11, tpm:0, tpa:0, ftm:4,  fta:6,  grade:'B'},
+        {name:'Marcin Grabowski',  pos:'C',  pts:12, reb:9,  ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C+'}
+      ]
+    },
+    { id:'d1-g5', team1:'warsaw-wolves', team2:'lodz-lions', date:'2025-04-19', status:'final', score1:93, score2:76, mvp:'Tomasz Wiśniewski',
+      team1_players:[
+        {name:'Marek Kowalski',   pos:'PG', pts:22, reb:4,  ast:10, stl:2, blk:0, tov:2, fgm:8,  fga:14, tpm:3, tpa:6, ftm:3,  fta:4,  grade:'A-'},
+        {name:'Piotr Zając',      pos:'SG', pts:16, reb:3,  ast:3,  stl:1, blk:0, tov:1, fgm:6,  fga:12, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'B'},
+        {name:'Adam Nowak',       pos:'SF', pts:15, reb:5,  ast:2,  stl:1, blk:1, tov:1, fgm:5,  fga:10, tpm:1, tpa:3, ftm:4,  fta:5,  grade:'B'},
+        {name:'Tomasz Wiśniewski',pos:'PF', pts:27, reb:12, ast:2,  stl:1, blk:4, tov:1, fgm:11, fga:16, tpm:0, tpa:0, ftm:5,  fta:6,  grade:'A'},
+        {name:'Kamil Dąbrowski',  pos:'C',  pts:13, reb:10, ast:1,  stl:0, blk:3, tov:1, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:4,  grade:'B'}
+      ],
+      team2_players:[
+        {name:'Jakub Wiśniewska',  pos:'PG', pts:18, reb:3,  ast:6,  stl:2, blk:0, tov:3, fgm:6,  fga:14, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'B-'},
+        {name:'Damian Szymański',  pos:'SG', pts:14, reb:2,  ast:2,  stl:1, blk:0, tov:1, fgm:5,  fga:11, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'C+'},
+        {name:'Filip Kubiak',      pos:'SF', pts:20, reb:6,  ast:2,  stl:0, blk:1, tov:2, fgm:7,  fga:13, tpm:2, tpa:4, ftm:4,  fta:5,  grade:'B+'},
+        {name:'Robert Pawlak',     pos:'PF', pts:13, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:10, tpm:0, tpa:0, ftm:3,  fta:4,  grade:'C+'},
+        {name:'Marcin Grabowski',  pos:'C',  pts:11, reb:9,  ast:1,  stl:0, blk:2, tov:1, fgm:4,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'C+'}
+      ]
+    },
+    { id:'d1-g6', team1:'gdansk-gulls', team2:'krakow-kings', date:'2025-05-03', status:'final', score1:80, score2:87, mvp:'Rafał Lewandowski',
+      team1_players:[
+        {name:'Bartosz Kalinowski',pos:'PG', pts:24, reb:4,  ast:8,  stl:2, blk:0, tov:3, fgm:8,  fga:16, tpm:3, tpa:7, ftm:5,  fta:6,  grade:'B+'},
+        {name:'Krzysztof Rutkowski',pos:'SG',pts:18, reb:3,  ast:3,  stl:1, blk:0, tov:2, fgm:6,  fga:13, tpm:2, tpa:6, ftm:4,  fta:4,  grade:'B'},
+        {name:'Paweł Sikora',      pos:'SF', pts:14, reb:5,  ast:2,  stl:1, blk:1, tov:1, fgm:5,  fga:10, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'B-'},
+        {name:'Artur Wróblewski',  pos:'PF', pts:13, reb:7,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:4,  grade:'C+'},
+        {name:'Sebastian Jankowski',pos:'C', pts:11, reb:9,  ast:1,  stl:0, blk:3, tov:1, fgm:4,  fga:7,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ],
+      team2_players:[
+        {name:'Rafał Lewandowski', pos:'PG', pts:27, reb:5,  ast:9,  stl:3, blk:0, tov:1, fgm:10, fga:17, tpm:3, tpa:6, ftm:4,  fta:5,  grade:'A'},
+        {name:'Szymon Woźniak',    pos:'SG', pts:20, reb:3,  ast:2,  stl:2, blk:0, tov:1, fgm:7,  fga:13, tpm:3, tpa:7, ftm:3,  fta:3,  grade:'B+'},
+        {name:'Michał Krawczyk',   pos:'SF', pts:17, reb:6,  ast:2,  stl:1, blk:1, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B'},
+        {name:'Łukasz Mazur',      pos:'PF', pts:14, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B-'},
+        {name:'Grzegorz Piotrowski',pos:'C', pts:9,  reb:8,  ast:1,  stl:0, blk:2, tov:1, fgm:3,  fga:6,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'C+'}
+      ]
+    },
+    // div1 upcoming
+    { id:'d1-g7', team1:'krakow-kings', team2:'gdansk-gulls', date:'2025-05-17', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] },
+    { id:'d1-g8', team1:'lodz-lions',   team2:'warsaw-wolves', date:'2025-05-24', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] },
+
+    // ── DIV 2 ──
+    { id:'d2-g1', team1:'berlin-bears', team2:'paris-panthers', date:'2025-03-07', status:'final', score1:91, score2:85, mvp:'Hans Müller',
+      team1_players:[
+        {name:'Hans Müller',     pos:'PG', pts:26, reb:4,  ast:9,  stl:3, blk:0, tov:2, fgm:10, fga:17, tpm:3, tpa:7, ftm:3,  fta:4,  grade:'A'},
+        {name:'Lars Wagner',     pos:'SG', pts:19, reb:3,  ast:3,  stl:1, blk:0, tov:1, fgm:7,  fga:13, tpm:2, tpa:5, ftm:3,  fta:3,  grade:'B+'},
+        {name:'Stefan Becker',   pos:'SF', pts:17, reb:6,  ast:2,  stl:2, blk:1, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B'},
+        {name:'Klaus Hoffmann',  pos:'PF', pts:16, reb:9,  ast:1,  stl:0, blk:2, tov:2, fgm:6,  fga:10, tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B'},
+        {name:'Dieter Schäfer',  pos:'C',  pts:13, reb:11, ast:2,  stl:0, blk:4, tov:1, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B'}
+      ],
+      team2_players:[
+        {name:'Pierre Dubois',   pos:'PG', pts:22, reb:4,  ast:8,  stl:2, blk:0, tov:3, fgm:8,  fga:16, tpm:3, tpa:7, ftm:3,  fta:4,  grade:'B+'},
+        {name:'Jean Moreau',     pos:'SG', pts:18, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:7,  fga:13, tpm:2, tpa:5, ftm:2,  fta:3,  grade:'B'},
+        {name:'Luc Bernard',     pos:'SF', pts:15, reb:5,  ast:2,  stl:1, blk:1, tov:1, fgm:5,  fga:10, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Antoine Leroy',   pos:'PF', pts:17, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:6,  fga:10, tpm:0, tpa:0, ftm:5,  fta:6,  grade:'B'},
+        {name:'Marc Petit',      pos:'C',  pts:13, reb:10, ast:1,  stl:0, blk:3, tov:1, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:4,  grade:'B-'}
+      ]
+    },
+    { id:'d2-g2', team1:'madrid-mavericks', team2:'rome-rockets', date:'2025-03-14', status:'final', score1:79, score2:95, mvp:'Matteo Romano',
+      team1_players:[
+        {name:'Carlos García',   pos:'PG', pts:19, reb:4,  ast:7,  stl:2, blk:0, tov:3, fgm:7,  fga:15, tpm:2, tpa:6, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Alejandro López', pos:'SG', pts:15, reb:3,  ast:2,  stl:1, blk:0, tov:2, fgm:5,  fga:12, tpm:2, tpa:6, ftm:3,  fta:3,  grade:'C+'},
+        {name:'Diego Martínez',  pos:'SF', pts:16, reb:6,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'B-'},
+        {name:'Sergio Fernández',pos:'PF', pts:17, reb:8,  ast:1,  stl:0, blk:2, tov:2, fgm:6,  fga:11, tpm:0, tpa:0, ftm:5,  fta:6,  grade:'B'},
+        {name:'Pablo Sánchez',   pos:'C',  pts:12, reb:10, ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:4,  grade:'C+'}
+      ],
+      team2_players:[
+        {name:'Matteo Romano',   pos:'PG', pts:28, reb:5,  ast:10, stl:3, blk:0, tov:2, fgm:10, fga:17, tpm:4, tpa:8, ftm:4,  fta:5,  grade:'A'},
+        {name:'Luca Ferrari',    pos:'SG', pts:22, reb:4,  ast:3,  stl:2, blk:0, tov:1, fgm:8,  fga:14, tpm:3, tpa:6, ftm:3,  fta:4,  grade:'B+'},
+        {name:'Marco Ricci',     pos:'SF', pts:18, reb:6,  ast:2,  stl:1, blk:1, tov:1, fgm:7,  fga:12, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B'},
+        {name:'Antonio Russo',   pos:'PF', pts:16, reb:9,  ast:2,  stl:0, blk:2, tov:2, fgm:6,  fga:10, tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B'},
+        {name:'Giovanni Costa',  pos:'C',  pts:11, reb:10, ast:1,  stl:0, blk:3, tov:1, fgm:4,  fga:7,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ]
+    },
+    { id:'d2-g3', team1:'berlin-bears', team2:'rome-rockets', date:'2025-03-28', status:'final', score1:88, score2:82, mvp:'Hans Müller',
+      team1_players:[
+        {name:'Hans Müller',     pos:'PG', pts:24, reb:5,  ast:8,  stl:2, blk:0, tov:2, fgm:9,  fga:16, tpm:3, tpa:7, ftm:3,  fta:4,  grade:'A-'},
+        {name:'Lars Wagner',     pos:'SG', pts:18, reb:4,  ast:3,  stl:2, blk:0, tov:1, fgm:7,  fga:13, tpm:2, tpa:5, ftm:2,  fta:3,  grade:'B'},
+        {name:'Stefan Becker',   pos:'SF', pts:20, reb:7,  ast:2,  stl:1, blk:1, tov:1, fgm:7,  fga:12, tpm:2, tpa:4, ftm:4,  fta:5,  grade:'B+'},
+        {name:'Klaus Hoffmann',  pos:'PF', pts:14, reb:10, ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B-'},
+        {name:'Dieter Schäfer',  pos:'C',  pts:12, reb:11, ast:2,  stl:0, blk:4, tov:1, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:2,  fta:4,  grade:'B-'}
+      ],
+      team2_players:[
+        {name:'Matteo Romano',   pos:'PG', pts:25, reb:4,  ast:7,  stl:2, blk:0, tov:3, fgm:9,  fga:17, tpm:3, tpa:7, ftm:4,  fta:5,  grade:'B+'},
+        {name:'Luca Ferrari',    pos:'SG', pts:20, reb:3,  ast:3,  stl:1, blk:0, tov:2, fgm:7,  fga:14, tpm:3, tpa:7, ftm:3,  fta:4,  grade:'B'},
+        {name:'Marco Ricci',     pos:'SF', pts:16, reb:5,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:11, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Antonio Russo',   pos:'PF', pts:13, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:4,  grade:'C+'},
+        {name:'Giovanni Costa',  pos:'C',  pts:8,  reb:9,  ast:1,  stl:0, blk:2, tov:1, fgm:3,  fga:6,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C'}
+      ]
+    },
+    { id:'d2-g4', team1:'paris-panthers', team2:'madrid-mavericks', date:'2025-04-11', status:'final', score1:96, score2:88, mvp:'Pierre Dubois',
+      team1_players:[
+        {name:'Pierre Dubois',   pos:'PG', pts:30, reb:5,  ast:11, stl:3, blk:0, tov:2, fgm:11, fga:18, tpm:4, tpa:8, ftm:4,  fta:5,  grade:'A'},
+        {name:'Jean Moreau',     pos:'SG', pts:21, reb:4,  ast:3,  stl:2, blk:0, tov:1, fgm:8,  fga:14, tpm:3, tpa:6, ftm:2,  fta:3,  grade:'B+'},
+        {name:'Luc Bernard',     pos:'SF', pts:17, reb:6,  ast:2,  stl:1, blk:1, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B'},
+        {name:'Antoine Leroy',   pos:'PF', pts:15, reb:8,  ast:1,  stl:0, blk:2, tov:2, fgm:6,  fga:10, tpm:0, tpa:0, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Marc Petit',      pos:'C',  pts:13, reb:11, ast:1,  stl:0, blk:3, tov:1, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ],
+      team2_players:[
+        {name:'Carlos García',   pos:'PG', pts:26, reb:5,  ast:8,  stl:2, blk:0, tov:2, fgm:9,  fga:16, tpm:3, tpa:7, ftm:5,  fta:6,  grade:'B+'},
+        {name:'Alejandro López', pos:'SG', pts:18, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:13, tpm:3, tpa:7, ftm:3,  fta:3,  grade:'B'},
+        {name:'Diego Martínez',  pos:'SF', pts:19, reb:6,  ast:2,  stl:1, blk:0, tov:1, fgm:7,  fga:12, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B'},
+        {name:'Sergio Fernández',pos:'PF', pts:14, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:4,  fta:5,  grade:'C+'},
+        {name:'Pablo Sánchez',   pos:'C',  pts:11, reb:9,  ast:1,  stl:0, blk:2, tov:2, fgm:4,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'C+'}
+      ]
+    },
+    // div2 upcoming
+    { id:'d2-g5', team1:'berlin-bears',    team2:'madrid-mavericks', date:'2025-05-16', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] },
+    { id:'d2-g6', team1:'paris-panthers',  team2:'rome-rockets',     date:'2025-05-23', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] },
+
+    // ── DIV 3 ──
+    { id:'d3-g1', team1:'prague-pioneers', team2:'vienna-vipers', date:'2025-03-06', status:'final', score1:72, score2:68, mvp:'Tomáš Novák',
+      team1_players:[
+        {name:'Tomáš Novák',     pos:'PG', pts:22, reb:4,  ast:8,  stl:2, blk:0, tov:2, fgm:8,  fga:15, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'A-'},
+        {name:'Ondřej Dvořák',   pos:'SG', pts:16, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:12, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'B'},
+        {name:'Jakub Procházka', pos:'SF', pts:14, reb:5,  ast:2,  stl:1, blk:1, tov:1, fgm:5,  fga:10, tpm:1, tpa:3, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Martin Škoda',    pos:'PF', pts:12, reb:8,  ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C+'},
+        {name:'Lukáš Krejčí',   pos:'C',  pts:8,  reb:9,  ast:1,  stl:0, blk:3, tov:1, fgm:3,  fga:6,  tpm:0, tpa:0, ftm:2,  fta:4,  grade:'C+'}
+      ],
+      team2_players:[
+        {name:'Markus Huber',    pos:'PG', pts:18, reb:4,  ast:6,  stl:2, blk:0, tov:2, fgm:6,  fga:14, tpm:2, tpa:6, ftm:4,  fta:5,  grade:'B'},
+        {name:'Felix Gruber',    pos:'SG', pts:16, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:5,  fga:12, tpm:3, tpa:7, ftm:3,  fta:3,  grade:'B-'},
+        {name:'Lukas Steiner',   pos:'SF', pts:14, reb:5,  ast:1,  stl:0, blk:1, tov:1, fgm:5,  fga:10, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'C+'},
+        {name:'Florian Weber',   pos:'PF', pts:12, reb:7,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C+'},
+        {name:'David Maier',     pos:'C',  pts:8,  reb:8,  ast:1,  stl:0, blk:2, tov:1, fgm:3,  fga:6,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C'}
+      ]
+    },
+    { id:'d3-g2', team1:'budapest-bulls', team2:'bratislava-blaze', date:'2025-03-13', status:'final', score1:85, score2:71, mvp:'Ádám Varga',
+      team1_players:[
+        {name:'Ádám Varga',      pos:'PG', pts:24, reb:5,  ast:8,  stl:2, blk:0, tov:2, fgm:9,  fga:15, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'A-'},
+        {name:'Péter Szabó',     pos:'SG', pts:18, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:7,  fga:13, tpm:2, tpa:5, ftm:2,  fta:2,  grade:'B+'},
+        {name:'Gábor Tóth',      pos:'SF', pts:16, reb:6,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'B'},
+        {name:'Balázs Kovács',   pos:'PF', pts:14, reb:9,  ast:1,  stl:0, blk:2, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:4,  fta:5,  grade:'B-'},
+        {name:'Zoltán Nagy',     pos:'C',  pts:13, reb:10, ast:1,  stl:0, blk:3, tov:1, fgm:5,  fga:8,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'B-'}
+      ],
+      team2_players:[
+        {name:'Marek Horváth',   pos:'PG', pts:18, reb:4,  ast:6,  stl:2, blk:0, tov:3, fgm:6,  fga:14, tpm:2, tpa:6, ftm:4,  fta:5,  grade:'B-'},
+        {name:'Peter Kováč',     pos:'SG', pts:16, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:5,  fga:12, tpm:3, tpa:7, ftm:3,  fta:3,  grade:'C+'},
+        {name:'Juraj Novák',     pos:'SF', pts:14, reb:5,  ast:2,  stl:0, blk:0, tov:1, fgm:5,  fga:10, tpm:2, tpa:5, ftm:2,  fta:3,  grade:'C+'},
+        {name:'Miroslav Kováčik',pos:'PF', pts:12, reb:7,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C+'},
+        {name:'Rastislav Blaho', pos:'C',  pts:11, reb:9,  ast:1,  stl:0, blk:2, tov:2, fgm:4,  fga:7,  tpm:0, tpa:0, ftm:3,  fta:5,  grade:'C+'}
+      ]
+    },
+    { id:'d3-g3', team1:'prague-pioneers', team2:'budapest-bulls', date:'2025-04-04', status:'final', score1:80, score2:78, mvp:'Tomáš Novák',
+      team1_players:[
+        {name:'Tomáš Novák',     pos:'PG', pts:25, reb:4,  ast:9,  stl:3, blk:0, tov:2, fgm:9,  fga:16, tpm:3, tpa:6, ftm:4,  fta:5,  grade:'A-'},
+        {name:'Ondřej Dvořák',   pos:'SG', pts:17, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:6,  fga:12, tpm:2, tpa:5, ftm:3,  fta:3,  grade:'B'},
+        {name:'Jakub Procházka', pos:'SF', pts:15, reb:5,  ast:1,  stl:1, blk:0, tov:1, fgm:5,  fga:10, tpm:2, tpa:4, ftm:3,  fta:4,  grade:'B-'},
+        {name:'Martin Škoda',    pos:'PF', pts:13, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:3,  fta:4,  grade:'C+'},
+        {name:'Lukáš Krejčí',   pos:'C',  pts:10, reb:9,  ast:1,  stl:0, blk:3, tov:1, fgm:4,  fga:7,  tpm:0, tpa:0, ftm:2,  fta:3,  grade:'C+'}
+      ],
+      team2_players:[
+        {name:'Ádám Varga',      pos:'PG', pts:22, reb:4,  ast:7,  stl:2, blk:0, tov:3, fgm:8,  fga:15, tpm:2, tpa:5, ftm:4,  fta:5,  grade:'B+'},
+        {name:'Péter Szabó',     pos:'SG', pts:19, reb:3,  ast:2,  stl:1, blk:0, tov:1, fgm:7,  fga:13, tpm:3, tpa:6, ftm:2,  fta:3,  grade:'B'},
+        {name:'Gábor Tóth',      pos:'SF', pts:16, reb:6,  ast:2,  stl:0, blk:0, tov:1, fgm:6,  fga:11, tpm:2, tpa:4, ftm:2,  fta:3,  grade:'B-'},
+        {name:'Balázs Kovács',   pos:'PF', pts:12, reb:8,  ast:1,  stl:0, blk:1, tov:2, fgm:5,  fga:9,  tpm:0, tpa:0, ftm:2,  fta:4,  grade:'C+'},
+        {name:'Zoltán Nagy',     pos:'C',  pts:9,  reb:9,  ast:1,  stl:0, blk:2, tov:1, fgm:4,  fga:7,  tpm:0, tpa:0, ftm:1,  fta:2,  grade:'C'}
+      ]
+    },
+    // div3 upcoming
+    { id:'d3-g4', team1:'vienna-vipers',     team2:'bratislava-blaze', date:'2025-05-15', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] },
+    { id:'d3-g5', team1:'budapest-bulls',    team2:'vienna-vipers',    date:'2025-05-22', status:'scheduled', score1:0, score2:0, mvp:'', team1_players:[], team2_players:[] }
+  ],
+  events: [
+    { id:'ev1', type:'tournament', name:'PEB Spring Cup 2025', date:'2025-04-26', location:'Warsaw Sports Arena', desc:'Jednodniowy turniej z udziałem najlepszych drużyn z wszystkich dywizji. Format: grupy + faza pucharowa.' },
+    { id:'ev2', type:'allstar',    name:'PEB All-Star Game 2025', date:'2025-05-10', location:'Krakow Indoor Hall', desc:'Mecz gwiazd wszystkich dywizji — wybierani głosowaniem kibiców i komisji ligi.' },
+    { id:'ev3', type:'draft',      name:'PEB Draft 2025', date:'2025-06-07', location:'Online / Discord', desc:'Roczny draft nowych zawodników. Każda drużyna może pozyskać do 3 nowych graczy.' },
+    { id:'ev4', type:'tournament', name:'PEB Summer Showdown', date:'2025-07-19', location:'Gdańsk City Court', desc:'Letni turniej plenerowy — format 3-dniowy, 16 drużyn, nagroda: złoty puchar PEB.' }
+  ]
 };
 
 let isAdmin = false;
