@@ -456,6 +456,7 @@ select.form-input{cursor:pointer}
       <button class="nav-btn" onclick="showSection('schedule',this)">📅 Schedule</button>
       <button class="nav-btn" onclick="showSection('boxscores',this)">📋 Box Scores</button>
       <button class="nav-btn" onclick="showSection('events',this)">⭐ Events</button>
+      <button class="nav-btn" id="admin-nav-btn" onclick="showSection('admin',this)" style="display:none">⚙ Admin</button>
     </nav>
 
     <div class="header-right">
@@ -1153,7 +1154,9 @@ async function doLogin() {
     closeModal('login-overlay');
     document.getElementById('login-btn').style.display = 'none';
     document.getElementById('logout-btn').style.display = '';
+    document.getElementById('admin-nav-btn').style.display = '';
     render();
+    showSection('admin');
     notify('Admin access granted', 'ok');
   } else {
     document.getElementById('login-error').style.display = 'block';
@@ -1165,6 +1168,7 @@ function doLogout() {
   ADMIN_TOKEN = '';
   document.getElementById('login-btn').style.display = '';
   document.getElementById('logout-btn').style.display = 'none';
+  document.getElementById('admin-nav-btn').style.display = 'none';
   if (currentSection === 'admin') showSection('stats');
   notify('Logged out');
 }
@@ -1191,7 +1195,7 @@ function showSection(id, btn) {
   if (btn) btn.classList.add('active');
   else {
     const btns = document.querySelectorAll('.nav-btn');
-    const sections = ['stats','standings','schedule','boxscores','events'];
+    const sections = ['stats','standings','schedule','boxscores','events','admin'];
     const i = sections.indexOf(id);
     if (i >= 0 && btns[i]) btns[i].classList.add('active');
   }
